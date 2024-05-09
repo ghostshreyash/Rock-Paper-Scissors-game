@@ -1,0 +1,79 @@
+body {
+    text-align: center;
+    background-color: #011F3F;
+    font-family: 'Press Start 2P', cursive;
+    color: #FEF2BF;
+}
+
+#game-title,.Selection {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin:  5%;
+    color: #FEF2BF;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+}
+
+.gameOverContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+  }
+
+.btn.rock{
+    background-image: url('./images/rock.png'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.btn.paper{
+    background-image: url('./images/paper.png'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.btn.scissors{
+    background-image: url('./images/scissors.png'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.btn:active {
+    transform: scale(0.9);
+    transition: 0.5s;
+}
